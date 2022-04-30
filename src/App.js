@@ -1,4 +1,4 @@
-import './App.css';
+import * as React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
@@ -9,7 +9,7 @@ import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<Home />}></Route>
