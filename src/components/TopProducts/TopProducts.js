@@ -1,36 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Product from '../Product/Product';
 
-const Products = () => {
+const TopProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('products.json')
+        fetch('topSelling.json')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
-
     return (
         <div className='container'>
-            <h3 className='text-center text-danger'>Inventory Items</h3>
+            <h3 className='text-center text-danger'>Top Selling Products</h3>
             <div className='row'>
                 {
-                    products.slice(0, 6).map(product => <Product
+                    products.slice(0, 3).map(product => <Product
                         key={product._id}
                         product={product}
                     ></Product>)
                 }
 
             </div>
-            <div className='my-5 text-center btn btn-success'>
-                <Link to="/manage-inventory">
-                    <button className='text-center btn btn-success'>Manage Inventories</button>
-                </Link>
-
-            </div>
         </div>
     );
 };
 
-export default Products;
+export default TopProducts;

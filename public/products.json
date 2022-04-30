@@ -13,7 +13,7 @@
         "name": "Processor",
         "price": "150",
         "img": "https://i.ibb.co/pLQY2dh/processor.jpg",
-        "description": "Intel Core-i-5 Computer Processor",
+        "description": "Intel Core-i-5 Processor",
         "quantity": "50",
         "supplier_name": "Global Tech Ltd."
     },
@@ -103,7 +103,7 @@
         "name": "Computer Casing",
         "price": "40",
         "img": "https://i.ibb.co/GHTyNr0/casing.jpg",
-        "description": "Space Tower Computer Casing",
+        "description": "Space Tower Casing",
         "quantity": "100",
         "supplier_name": "Space Hardware Ltd."
     }

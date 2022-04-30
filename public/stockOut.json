@@ -1,0 +1,29 @@
+[
+    {
+        "_id": 9,
+        "name": "Mouse",
+        "price": "5",
+        "img": "https://i.ibb.co/s1NRCL9/mouse.jpg",
+        "description": "A4Tech Wireless Mouse",
+        "quantity": "00",
+        "supplier_name": "A4Tech"
+    },
+    {
+        "_id": 10,
+        "name": "Speaker",
+        "price": "25",
+        "img": "https://i.ibb.co/6HFssbx/speaker.png",
+        "description": "AWEI 200W Micro Sound System",
+        "quantity": "00",
+        "supplier_name": "AWEI Sound Solution"
+    },
+    {
+        "_id": 11,
+        "name": "Web Cam",
+        "price": "10",
+        "img": "https://i.ibb.co/wdV9fgP/webcam.jpg",
+        "description": "5M Web Cam",
+        "quantity": "00",
+        "supplier_name": "Samsung Ltd."
+    }
+]
