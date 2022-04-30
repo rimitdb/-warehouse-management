@@ -23,6 +23,7 @@ const ManageInventory = () => {
                 }
 
             </div>
+
         </div>
     );
 };

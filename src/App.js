@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import ManageInventory from './components/ManageInventory/ManageInventory';
 import Login from './components/Login/Login';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/home" element={<Home />}></Route>
         <Route path="/manage-inventory" element={<ManageInventory />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer></Footer>
     </div>
