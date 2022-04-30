@@ -8,7 +8,7 @@ const Footer = () => {
 
                 <div className="footer-copyright text-center py-3">
                     <MDBContainer fluid>
-                        &copy; {new Date().getFullYear()} Copyright: RIM COMPUTERS
+                        &copy; Copyright: {new Date().getFullYear()} , RIM COMPUTERS
                     </MDBContainer>
                 </div>
             </MDBFooter>
