@@ -1,5 +1,6 @@
 [
     {
+        "_id": 1,
         "name": "LCD Monitor",
         "price": "200",
         "img": "https://i.ibb.co/fkxY4wv/monitor.jpg",
@@ -8,6 +9,7 @@
         "supplier_name": "Smart Technology Ltd."
     },
     {
+        "_id": 2,
         "name": "Processor",
         "price": "150",
         "img": "https://i.ibb.co/pLQY2dh/processor.jpg",
@@ -16,6 +18,7 @@
         "supplier_name": "Global Tech Ltd."
     },
     {
+        "_id": 3,
         "name": "RAM",
         "price": "50",
         "img": "https://i.ibb.co/hmpM333/ram.png",
@@ -24,6 +27,7 @@
         "supplier_name": "Smart Technology Ltd."
     },
     {
+        "_id": 4,
         "name": "Power Supply",
         "price": "95",
         "img": "https://i.ibb.co/QYhfT9J/power-supply.jpg",
@@ -32,6 +36,7 @@
         "supplier_name": "UCC Technology Ltd"
     },
     {
+        "_id": 5,
         "name": "Mother Board",
         "price": "150",
         "img": "https://i.ibb.co/Cbcs65z/motherboard.jpg",
@@ -40,6 +45,7 @@
         "supplier_name": "Smart Technology Ltd."
     },
     {
+        "_id": 6,
         "name": "SSD",
         "price": "30",
         "img": "https://i.ibb.co/XFXs6Wk/ssd.jpg",
@@ -48,6 +54,7 @@
         "supplier_name": "Samsung Ltd."
     },
     {
+        "_id": 7,
         "name": "HDD",
         "price": "25",
         "img": "https://i.ibb.co/rpntZc1/hdd.jpg",
@@ -56,6 +63,7 @@
         "supplier_name": "Western Technology Ltd."
     },
     {
+        "_id": 8,
         "name": "Keyboard",
         "price": "10",
         "img": "https://i.ibb.co/Fn6B2fv/keyboard.jpg",
@@ -64,6 +72,7 @@
         "supplier_name": "A4Tech"
     },
     {
+        "_id": 9,
         "name": "Mouse",
         "price": "5",
         "img": "https://i.ibb.co/s1NRCL9/mouse.jpg",
@@ -72,14 +81,16 @@
         "supplier_name": "A4Tech"
     },
     {
+        "_id": 10,
         "name": "Speaker",
         "price": "25",
         "img": "https://i.ibb.co/6HFssbx/speaker.png",
         "description": "AWEI 200W Micro Sound System",
         "quantity": "100",
-        "supplier_name": "AWEI"
+        "supplier_name": "AWEI Sound Solution"
     },
     {
+        "_id": 11,
         "name": "Web Cam",
         "price": "10",
         "img": "https://i.ibb.co/wdV9fgP/webcam.jpg",
@@ -88,6 +99,7 @@
         "supplier_name": "Samsung Ltd."
     },
     {
+        "_id": 12,
         "name": "Computer Casing",
         "price": "40",
         "img": "https://i.ibb.co/GHTyNr0/casing.jpg",
