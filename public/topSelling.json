@@ -1,29 +1,29 @@
 [
     {
-        "_id": 7,
+        "_id": 1,
         "name": "HDD",
-        "price": "25",
+        "price": 25,
         "img": "https://i.ibb.co/rpntZc1/hdd.jpg",
         "description": "1 TB Hard-Disk",
-        "quantity": "20",
+        "quantity": 20,
         "supplier_name": "Western Technology Ltd."
     },
     {
-        "_id": 8,
+        "_id": 2,
         "name": "Keyboard",
-        "price": "10",
+        "price": 10,
         "img": "https://i.ibb.co/Fn6B2fv/keyboard.jpg",
         "description": "A4Tech Slim Keyboard",
-        "quantity": "100",
+        "quantity": 100,
         "supplier_name": "A4Tech"
     },
     {
-        "_id": 12,
+        "_id": 3,
         "name": "Computer Casing",
-        "price": "40",
+        "price": 40,
         "img": "https://i.ibb.co/GHTyNr0/casing.jpg",
         "description": "Space Tower Casing",
-        "quantity": "100",
+        "quantity": 100,
         "supplier_name": "Space Hardware Ltd."
     }
 ]

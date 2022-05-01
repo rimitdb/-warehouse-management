@@ -2,91 +2,91 @@
     {
         "_id": 1,
         "name": "LCD Monitor",
-        "price": "200",
+        "price": 200,
         "img": "https://i.ibb.co/fkxY4wv/monitor.jpg",
         "description": "21 inch Computer Monitor",
-        "quantity": "50",
+        "quantity": 50,
         "supplier_name": "Smart Technology Ltd."
     },
     {
         "_id": 2,
         "name": "Processor",
-        "price": "150",
+        "price": 150,
         "img": "https://i.ibb.co/pLQY2dh/processor.jpg",
         "description": "Intel Core-i-5 Processor",
-        "quantity": "50",
+        "quantity": 50,
         "supplier_name": "Global Tech Ltd."
     },
     {
         "_id": 3,
         "name": "RAM",
-        "price": "50",
+        "price": 50,
         "img": "https://i.ibb.co/hmpM333/ram.png",
         "description": "8 GB RAM",
-        "quantity": "100",
+        "quantity": 100,
         "supplier_name": "Smart Technology Ltd."
     },
     {
         "_id": 4,
         "name": "Power Supply",
-        "price": "95",
+        "price": 95,
         "img": "https://i.ibb.co/QYhfT9J/power-supply.jpg",
         "description": "700W PC Power Supply",
-        "quantity": "60",
+        "quantity": 60,
         "supplier_name": "UCC Technology Ltd"
     },
     {
         "_id": 5,
         "name": "Mother Board",
-        "price": "150",
+        "price": 150,
         "img": "https://i.ibb.co/Cbcs65z/motherboard.jpg",
         "description": "Gigabyte H310M Motherboard",
-        "quantity": "50",
+        "quantity": 50,
         "supplier_name": "Smart Technology Ltd."
     },
     {
         "_id": 6,
         "name": "SSD",
-        "price": "30",
+        "price": 30,
         "img": "https://i.ibb.co/XFXs6Wk/ssd.jpg",
         "description": "256 GB Solid State Drive",
-        "quantity": "50",
+        "quantity": 50,
         "supplier_name": "Samsung Ltd."
     },
     {
         "_id": 7,
         "name": "HDD",
-        "price": "25",
+        "price": 25,
         "img": "https://i.ibb.co/rpntZc1/hdd.jpg",
         "description": "1 TB Hard-Disk",
-        "quantity": "20",
+        "quantity": 20,
         "supplier_name": "Western Technology Ltd."
     },
     {
         "_id": 8,
         "name": "Keyboard",
-        "price": "10",
+        "price": 10,
         "img": "https://i.ibb.co/Fn6B2fv/keyboard.jpg",
         "description": "A4Tech Slim Keyboard",
-        "quantity": "100",
+        "quantity": 100,
         "supplier_name": "A4Tech"
     },
     {
         "_id": 9,
         "name": "Mouse",
-        "price": "5",
+        "price": 5,
         "img": "https://i.ibb.co/s1NRCL9/mouse.jpg",
         "description": "A4Tech Wireless Mouse",
-        "quantity": "100",
+        "quantity": 100,
         "supplier_name": "A4Tech"
     },
     {
         "_id": 10,
         "name": "Speaker",
-        "price": "25",
+        "price": 25,
         "img": "https://i.ibb.co/6HFssbx/speaker.png",
         "description": "AWEI 200W Micro Sound System",
-        "quantity": "100",
+        "quantity": 100,
         "supplier_name": "AWEI Sound Solution"
     },
     {
@@ -95,16 +95,16 @@
         "price": "10",
         "img": "https://i.ibb.co/wdV9fgP/webcam.jpg",
         "description": "5M Web Cam",
-        "quantity": "30",
+        "quantity": 30,
         "supplier_name": "Samsung Ltd."
     },
     {
         "_id": 12,
         "name": "Computer Casing",
-        "price": "40",
+        "price": 40,
         "img": "https://i.ibb.co/GHTyNr0/casing.jpg",
         "description": "Space Tower Casing",
-        "quantity": "100",
+        "quantity": 100,
         "supplier_name": "Space Hardware Ltd."
     }
 ]

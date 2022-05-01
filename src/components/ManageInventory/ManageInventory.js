@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Product from '../Product/Product';
+import React, { useEffect, useState } from "react";
+import Product from "../Product/Product";
 
 const ManageInventory = () => {
 

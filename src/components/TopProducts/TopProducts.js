@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import Product from '../Product/Product';
+import React, { useEffect, useState } from "react";
+import Product from "../Product/Product";
 
 const TopProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('topSelling.json')
+        fetch("topSelling.json")
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);

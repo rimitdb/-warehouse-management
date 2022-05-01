@@ -1,7 +1,13 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 
 const Product = ({ product }) => {
-    const { name, price, img, description, quantity, supplier_name } = product
+    const { _id, name, price, img, description, quantity, supplier_name } = product;
+    const navigate = useNavigate();
+    const handleStockUpdate = _id => {
+        navigate(`/product/${_id}`)
+    }
     return (
         <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
             <div className='card'>
@@ -12,11 +18,22 @@ const Product = ({ product }) => {
                     <p className="card-text">{description}</p>
                     <p className="card-text">Available Stock: {quantity}</p>
                     <p className="card-text">Supplier: {supplier_name}</p>
-                    <button className='btn btn-success'>Update Stock</button>
+                    <button onClick={() => handleStockUpdate(_id)} className='btn btn-success'>Update Stock</button>
                 </div>
             </div>
         </div>
     );
-};
+
+}
+
+Product.propTypes = {
+    name: PropTypes.string,
+    price: PropTypes.number,
+    img: PropTypes.string,
+    description: PropTypes.string,
+    quantity: PropTypes.number,
+    supplier_name: PropTypes.string
+}
+
 
 export default Product;
