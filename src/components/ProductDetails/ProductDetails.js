@@ -1,14 +1,14 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-const ProductDetails = ({ product }) => {
+const ProductDetails = () => {
     const { productId } = useParams();
-    const { name, price, img, description, quantity, supplier_name } = product;
+    // const { name, price, img, description, quantity, supplier_name } = product;
 
     return (
         <div>
             <h3>Details information of the Product {productId}</h3>
-            <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
+            {/* <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
                 <div className='card'>
                     <img src={img} className="card-img-top" alt="images_name" />
                     <div className="card-body">
@@ -20,7 +20,7 @@ const ProductDetails = ({ product }) => {
                         <button className='btn btn-success'>Update Stock</button>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

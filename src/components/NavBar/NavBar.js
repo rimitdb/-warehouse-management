@@ -31,7 +31,7 @@ const NavBar = () => {
     return (
         <Navbar bg="success" expand="lg" sticky="top">
             <Container fluid>
-                <Navbar.Brand href="#">RIM COMPUTERS</Navbar.Brand>
+                <Navbar.Brand href="/">RIM COMPUTERS</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"></Navbar.Toggle>
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className="ms-auto my-2 my-lg-0" navbarScroll >
