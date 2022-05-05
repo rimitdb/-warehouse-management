@@ -36,7 +36,14 @@ const NavBar = () => {
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className="ms-auto my-2 my-lg-0" navbarScroll >
                         <Nav.Link className="px-2 text-light" as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link className="px-2 text-light" as={Link} to="/manage-inventory">Manage Inventory</Nav.Link>
+                        {
+                            user && <>
+                                <Nav.Link className="px-2 text-light" as={Link} to="/addproduct">Add Product</Nav.Link>
+                                <Nav.Link className="px-2 text-light" as={Link} to="/manage-inventory">Manage Inventory</Nav.Link>
+                                :
+                                <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                            </>
+                        }
                         {
                             user?.uid
                                 ?

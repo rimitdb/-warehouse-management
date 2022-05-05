@@ -9,6 +9,7 @@ import NotFound from "./components/NotFound/NotFound";
 import Register from "./components/Register/Register";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
+import AddProduct from "./components/AddProduct/AddProduct";
 
 function App() {
   return (
@@ -17,10 +18,19 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
-        <Route path="/manage-inventory" element={<ManageInventory />}></Route>
         <Route path="/product/:productId" element={
           <RequireAuth>
             <ProductDetails></ProductDetails>
+          </RequireAuth>
+        }></Route>
+        <Route path="/addproduct" element={
+          <RequireAuth>
+            <AddProduct></AddProduct>
+          </RequireAuth>
+        }></Route>
+        <Route path="/manage-inventory" element={
+          <RequireAuth>
+            <ManageInventory />
           </RequireAuth>
         }></Route>
         <Route path="/login" element={<Login />}></Route>
