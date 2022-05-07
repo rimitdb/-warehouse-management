@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
-// import { Button } from "react-bootstrap";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-// import Product from "../Product/Product";
 
 const ManageInventory = () => {
     const navigate = useNavigate();
@@ -29,7 +28,8 @@ const ManageInventory = () => {
                     console.log(data);
                     const remaining = products.filter(product => product._id !== id);
                     setProducts(remaining);
-                })
+                });
+            toast("Product Deleted!!");
         }
     }
 
@@ -66,7 +66,6 @@ const ManageInventory = () => {
             </table>
 
             <div className="text-center" ><Button onClick={() => handleAddProduct()} className="mt-5 btn btn-success">Add Product</Button></div>
-
         </div>
     );
 };

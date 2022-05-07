@@ -10,10 +10,12 @@ import Register from "./components/Register/Register";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import AddProduct from "./components/AddProduct/AddProduct";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <div>
+      <Toaster />
       <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<Home />}></Route>
