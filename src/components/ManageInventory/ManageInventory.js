@@ -39,20 +39,32 @@ const ManageInventory = () => {
     }
     return (
         <div className='container'>
+            <h3 className='my-5 text-center text-success'>Inventory Items</h3>
+            <table className="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Supplier Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        products.map(product => <tr key={product._id}>
+                            <td>{product.name}</td>
+                            <td><img src={product.img} width="50px" height="50px" alt="" /></td>
+                            <td>{product.price}</td>
+                            <td>{product.quantity}</td>
+                            <td>{product.supplier_name}</td>
+                            <td><Button className="btn btn-danger" onClick={() => removeItem(product._id)}>Delete</Button></td>
+                        </tr>)
+                    }
+                </tbody>
+            </table>
 
-
-            {
-                products.map(product => <div key={product._id}>
-
-                    <h5>{product.name}
-                        <Button className="btn btn-danger" onClick={() => removeItem(product._id)}>Delete</Button>
-                    </h5>
-                </div>)
-            }
-
-
-            <h3 className='text-center text-danger mt-5'>Inventory Items</h3>
-            {/* <DataTable columns={columns} data={products} responsive highlightOnHover /> */}
             <div className="text-center" ><Button onClick={() => handleAddProduct()} className="mt-5 btn btn-success">Add Product</Button></div>
 
         </div>
