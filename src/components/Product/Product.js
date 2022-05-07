@@ -5,9 +5,11 @@ import { useNavigate } from "react-router-dom";
 const Product = ({ product }) => {
     const { _id, name, price, img, description, quantity, supplier_name } = product;
     const navigate = useNavigate();
+
     const handleStockUpdate = id => {
         navigate(`/product/${id}`)
     }
+
     return (
         <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
             <div className='card'>

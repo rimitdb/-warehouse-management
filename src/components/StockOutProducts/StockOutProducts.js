@@ -1,24 +1,31 @@
 import React, { useEffect, useState } from 'react';
-import Product from '../Product/Product';
+import StockOutSoon from '../StockOutSoon/StockOutSoon';
 
 const StockOutProducts = () => {
     const [products, setProducts] = useState([]);
+    const stockOutSoon = products.filter(product => product.quantity <= 10)
 
     useEffect(() => {
-        fetch('stockOut.json')
+        fetch("http://localhost:5000/product")
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, []);
+        setProducts(stockOutSoon);
+    }, [setProducts]);
+
+
+
+
 
     return (
         <div className='container'>
-            <h3 className='text-center text-danger mt-5'>Stock Out Products</h3>
+            <h3 className='text-center text-danger mt-5'>Stock Out Soon</h3>
             <div className='row'>
                 {
-                    products.slice(0, 3).map(product => <Product
-                        key={product._id}
-                        product={product}
-                    ></Product>)
+
+                    stockOutSoon.slice(0, 3).map(lessProduct => <StockOutSoon
+                        key={lessProduct._id}
+                        product={lessProduct}
+                    ></StockOutSoon>)
                 }
 
             </div>

@@ -31,8 +31,6 @@ const ProductDetails = () => {
                 setProduct(result);
                 setIsReload(!reload);
                 toast.success("Quantity Updated");
-                console.log(productQuantity, JSON.stringify(productQuantity));
-
             });
 
     };
@@ -43,8 +41,6 @@ const ProductDetails = () => {
         const newStock = quantity + parseInt(product.quantity);
         const updateQuantity = `${newStock}`
         const productQuantity = { updateQuantity };
-
-        console.log(productQuantity);
         const url = `http://localhost:5000/product/${productId}`;
         fetch(url, {
             method: "PUT",

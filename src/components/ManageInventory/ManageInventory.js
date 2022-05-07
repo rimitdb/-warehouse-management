@@ -36,7 +36,12 @@ const ManageInventory = () => {
 
     const handleAddProduct = () => {
         navigate(`/addproduct`);
-    }
+    };
+
+    const handleStockUpdate = id => {
+        navigate(`/product/${id}`)
+    };
+
     return (
         <div className='container'>
             <h3 className='my-5 text-center text-success'>Inventory Items</h3>
@@ -59,6 +64,7 @@ const ManageInventory = () => {
                             <td>{product.price}</td>
                             <td>{product.quantity}</td>
                             <td>{product.supplier_name}</td>
+                            <td><Button onClick={() => handleStockUpdate(product._id)} className='btn btn-success'>Update Stock</Button></td>
                             <td><Button className="btn btn-danger" onClick={() => removeItem(product._id)}>Delete</Button></td>
                         </tr>)
                     }

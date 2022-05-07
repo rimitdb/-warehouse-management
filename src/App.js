@@ -11,6 +11,7 @@ import ProductDetails from "./components/ProductDetails/ProductDetails";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import AddProduct from "./components/AddProduct/AddProduct";
 import { Toaster } from "react-hot-toast";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <ManageInventory />
           </RequireAuth>
         }></Route>
+        <Route path="/blog" element={<Blog />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="*" element={<NotFound />}></Route>
