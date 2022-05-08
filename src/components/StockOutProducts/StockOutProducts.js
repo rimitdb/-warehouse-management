@@ -6,7 +6,7 @@ const StockOutProducts = () => {
     const stockOutSoon = products.filter(product => product.quantity <= 10)
 
     useEffect(() => {
-        fetch("http://localhost:5000/product")
+        fetch("https://powerful-chamber-08415.herokuapp.com/product")
             .then(res => res.json())
             .then(data => setProducts(data))
         setProducts(stockOutSoon);

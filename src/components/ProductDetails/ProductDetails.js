@@ -8,7 +8,7 @@ const ProductDetails = () => {
     const [reload, setIsReload] = useState(true);
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`
+        const url = `https://powerful-chamber-08415.herokuapp.com/product/${productId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
@@ -18,7 +18,7 @@ const ProductDetails = () => {
         const newQuantity = (parseInt(product.quantity) - 1);
         const updateQuantity = `${newQuantity}`;
         const productQuantity = { updateQuantity };
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://powerful-chamber-08415.herokuapp.com/product/${productId}`;
         fetch(url, {
             method: "PUT",
             headers: {
@@ -41,7 +41,7 @@ const ProductDetails = () => {
         const newStock = quantity + parseInt(product.quantity);
         const updateQuantity = `${newStock}`
         const productQuantity = { updateQuantity };
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://powerful-chamber-08415.herokuapp.com/product/${productId}`;
         fetch(url, {
             method: "PUT",
             headers: {

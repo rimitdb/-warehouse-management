@@ -6,7 +6,7 @@ const TopProducts = () => {
     const topProductList = products.filter(product => product.price >= 100)
 
     useEffect(() => {
-        fetch("http://localhost:5000/product")
+        fetch("https://powerful-chamber-08415.herokuapp.com/product")
             .then(res => res.json())
             .then(data => setProducts(data))
         setProducts(topProductList);

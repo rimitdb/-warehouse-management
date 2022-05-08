@@ -9,7 +9,7 @@ const ManageInventory = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/product")
+        fetch("https://powerful-chamber-08415.herokuapp.com/product")
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
@@ -19,7 +19,7 @@ const ManageInventory = () => {
     const removeItem = id => {
         const proceed = window.confirm("Are you Sure?");
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://powerful-chamber-08415.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: "DELETE"
             })
