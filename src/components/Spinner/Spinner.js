@@ -1,11 +1,10 @@
 import React from 'react';
-
 const Spinner = () => {
     return (
         <div>
             <div className="text-center">
                 <div className="spinner-border" role="status">
-                    <span className="visually-hidden">Loading...</span>
+                    <h5><span className="text-danger">Loading...</span></h5>
                 </div>
             </div>
         </div>
