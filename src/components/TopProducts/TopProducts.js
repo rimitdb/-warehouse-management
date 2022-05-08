@@ -10,7 +10,6 @@ const TopProducts = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
         setProducts(topProductList);
-        console.log(topProductList)
     }, [setProducts]);
 
     return (
