@@ -1,4 +1,4 @@
-# RIM COMPUTERS INVENTORY
+# INVENTORY MANAGEMENT SYSTEM
 
 ## [Live Site Link](https://inventory-management-aac2b.web.app)
 
